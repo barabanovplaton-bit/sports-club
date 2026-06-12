@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Абонементы — ИМПУЛЬС</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="loading">
+
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-logo">ИМПУЛЬС</div>
+    <div class="preloader-spinner"></div>
+  </div>
+
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+        </div>
+        ИМПУЛЬС
+      </a>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="training.html">Тренировки</a>
+        <a href="schedule.html">Расписание</a>
+        <a href="facilities.html">Залы</a>
+        <a href="trainers.html">Тренеры</a>
+        <a href="pricing.html">Абонементы</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <a href="contacts.html" class="header-cta">Записаться</a>
+    </div>
+  </header>
+
+  <!-- Pricing Hero -->
+  <section class="pricing-hero">
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="section-label anim anim-up">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4V6h16v12zM6 10h2v2H6zm0 4h8v2H6zm10 0h2v2h-2zm-6-4h8v2h-8z"/></svg>
+        Абонементы
+      </div>
+      <h1 class="section-title anim anim-up">Выберите свой абонемент</h1>
+      <p class="section-subtitle anim anim-up">Прозрачные цены, нет скрытых платежей. Первый пробный визит — бесплатно.</p>
+    </div>
+  </section>
+
+  <!-- Pricing Tabs -->
+  <section class="section">
+    <div class="container">
+      <!-- Tab buttons -->
+      <div class="pricing-tabs anim anim-up">
+        <button class="pricing-tab active" data-tab="group">Групповые</button>
+        <button class="pricing-tab" data-tab="individual">Индивидуальные</button>
+        <button class="pricing-tab" data-tab="self">Самостоятельные</button>
+      </div>
+
+      <!-- ==================== GROUP PANEL ==================== -->
+      <!--
+        Aligned rows across all 3 cards:
+        Row 1: Групповые тренировки (tier-specific)
+        Row 2: Тренажёрный зал          (+,+,+)
+        Row 3: Раздевалки и душевые     (+,+,+)
+        Row 4: Бассейн                  (-,+,+)
+        Row 5: Сауна                    (-,-,+)
+        Row 6: VIP раздевалки           (-,-,+)
+        Row 7: Персональный тренер      (-,-,-)
+      -->
+      <div class="pricing-panel" data-panel="group">
+        <div class="pricing-grid" data-anim-children="up">
+
+          <!-- Старт -->
+          <div class="pricing-card anim anim-up">
+            <div class="pricing-name">Старт</div>
+            <div class="pricing-desc">Для тех, кто начинает свой путь</div>
+            <ul class="pricing-features">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                8 групповых в месяц
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Тренажёрный зал
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Раздевалки и душевые
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Бассейн
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Сауна
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                VIP раздевалки
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Персональный тренер
+              </li>
+            </ul>
+            <div class="pricing-price-area">
+              <div class="pricing-price">2 900 ₽<span>/мес</span></div>
+              <div class="pricing-period">Базовый групповой абонемент</div>
+            </div>
+            <a href="contacts.html" class="pricing-btn outline">Выбрать</a>
+          </div>
+
+          <!-- Оптимальный -->
+          <div class="pricing-card featured anim anim-up">
+            <div class="pricing-name">Оптимальный</div>
+            <div class="pricing-desc">Самый популярный выбор</div>
+            <ul class="pricing-features">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                12 групповых в месяц
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Тренажёрный зал
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Раздевалки и душевые
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Бассейн
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Сауна
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                VIP раздевалки
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Персональный тренер
+              </li>
+            </ul>
+            <div class="pricing-price-area">
+              <div class="pricing-price">4 500 ₽<span>/мес</span></div>
+              <div class="pricing-period">Лучшее соотношение цены и качества</div>
+            </div>
+            <a href="contacts.html" class="pricing-btn">Выбрать</a>
+          </div>
+
+          <!-- Безлимит -->
+          <div class="pricing-card anim anim-up">
+            <div class="pricing-name">Безлимит</div>
+            <div class="pricing-desc">Без ограничений</div>
+            <ul class="pricing-features">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Безлимит групповых
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Тренажёрный зал
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Раздевалки и душевые
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Бассейн
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Сауна
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                VIP раздевалки
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Персональный тренер
+              </li>
+            </ul>
+            <div class="pricing-price-area">
+              <div class="pricing-price">6 900 ₽<span>/мес</span></div>
+              <div class="pricing-period">Полный доступ ко всему</div>
+            </div>
+            <a href="contacts.html" class="pricing-btn outline">Выбрать</a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ==================== INDIVIDUAL PANEL ==================== -->
+      <!--
+        Aligned rows across all 3 cards:
+        Row 1: Персональные тренировки   (tier-specific)
+        Row 2: Тренажёрный зал            (+,+,+)
+        Row 3: Раздевалки и душевые       (+,+,+)
+        Row 4: Персональный тренер        (+,+,+)
+        Row 5: Бассейн                    (-,+,+)
+        Row 6: Сауна                      (-,-,+)
+        Row 7: Видеоанализ техники        (-,-,+)
+        Row 8: VIP раздевалки             (-,-,+)
+        Row 9: Питание от нутрициолога    (-,-,+)
+      -->
+      <div class="pricing-panel" data-panel="individual" style="display:none">
+        <div class="pricing-grid" data-anim-children="up">
+
+          <!-- Пробный -->
+          <div class="pricing-card anim anim-up">
+            <div class="pricing-name">Пробный</div>
+            <div class="pricing-desc">Попробуйте индивидуальный формат</div>
+            <ul class="pricing-features">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                4 персональных в месяц
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Тренажёрный зал
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Раздевалки и душевые
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Персональный тренер
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Бассейн
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Сауна
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Видеоанализ техники
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                VIP раздевалки
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Питание от нутрициолога
+              </li>
+            </ul>
+            <div class="pricing-price-area">
+              <div class="pricing-price">4 900 ₽<span>/мес</span></div>
+              <div class="pricing-period">Вводный персональный абонемент</div>
+            </div>
+            <a href="contacts.html" class="pricing-btn outline">Выбрать</a>
+          </div>
+
+          <!-- Стандарт -->
+          <div class="pricing-card featured anim anim-up">
+            <div class="pricing-name">Стандарт</div>
+            <div class="pricing-desc">Оптимальный формат</div>
+            <ul class="pricing-features">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                8 персональных в месяц
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Тренажёрный зал
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Раздевалки и душевые
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Персональный тренер
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Бассейн
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Сауна
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Видеоанализ техники
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                VIP раздевалки
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Питание от нутрициолога
+              </li>
+            </ul>
+            <div class="pricing-price-area">
+              <div class="pricing-price">7 900 ₽<span>/мес</span></div>
+              <div class="pricing-period">Лучший результат с тренером</div>
+            </div>
+            <a href="contacts.html" class="pricing-btn">Выбрать</a>
+          </div>
+
+          <!-- Премиум -->
+          <div class="pricing-card anim anim-up">
+            <div class="pricing-name">Премиум</div>
+            <div class="pricing-desc">Максимальный результат</div>
+            <ul class="pricing-features">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                12 персональных в месяц
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Тренажёрный зал
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Раздевалки и душевые
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Персональный тренер
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Бассейн
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Сауна
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Видеоанализ техники
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                VIP раздевалки
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Питание от нутрициолога
+              </li>
+            </ul>
+            <div class="pricing-price-area">
+              <div class="pricing-price">11 900 ₽<span>/мес</span></div>
+              <div class="pricing-period">Полный премиум-пакет</div>
+            </div>
+            <a href="contacts.html" class="pricing-btn outline">Выбрать</a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ==================== SELF PANEL ==================== -->
+      <!--
+        Aligned rows across all 3 cards:
+        Row 1: Доступ                     (tier-specific)
+        Row 2: Тренажёрный зал            (+,+,+)
+        Row 3: Раздевалки и душевые       (+,+,+)
+        Row 4: Бассейн                    (-,+,+)
+        Row 5: Вечерний доступ            (-,+,+)
+        Row 6: Сауна                      (-,-,+)
+        Row 7: VIP раздевалки             (-,-,+)
+        Row 8: Гостевой визит             (-,-,+)
+      -->
+      <div class="pricing-panel" data-panel="self" style="display:none">
+        <div class="pricing-grid" data-anim-children="up">
+
+          <!-- Дневной -->
+          <div class="pricing-card anim anim-up">
+            <div class="pricing-name">Дневной</div>
+            <div class="pricing-desc">Доступ в дневные часы</div>
+            <ul class="pricing-features">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Доступ с 9:00 до 16:00
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Тренажёрный зал
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Раздевалки и душевые
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Бассейн
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Вечерний доступ
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Сауна
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                VIP раздевалки
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Гостевой визит
+              </li>
+            </ul>
+            <div class="pricing-price-area">
+              <div class="pricing-price">1 900 ₽<span>/мес</span></div>
+              <div class="pricing-period">Экономичный дневной доступ</div>
+            </div>
+            <a href="contacts.html" class="pricing-btn outline">Выбрать</a>
+          </div>
+
+          <!-- Полный -->
+          <div class="pricing-card featured anim anim-up">
+            <div class="pricing-name">Полный</div>
+            <div class="pricing-desc">Без ограничений по времени</div>
+            <ul class="pricing-features">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Доступ с 6:00 до 23:00
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Тренажёрный зал
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Раздевалки и душевые
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Бассейн
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Вечерний доступ
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Сауна
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                VIP раздевалки
+              </li>
+              <li class="disabled">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                Гостевой визит
+              </li>
+            </ul>
+            <div class="pricing-price-area">
+              <div class="pricing-price">2 900 ₽<span>/мес</span></div>
+              <div class="pricing-period">Самый популярный самостоятельный</div>
+            </div>
+            <a href="contacts.html" class="pricing-btn">Выбрать</a>
+          </div>
+
+          <!-- Все включено -->
+          <div class="pricing-card anim anim-up">
+            <div class="pricing-name">Все включено</div>
+            <div class="pricing-desc">Максимальный доступ</div>
+            <ul class="pricing-features">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Доступ 6:00–23:00
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Тренажёрный зал
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Раздевалки и душевые
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Бассейн
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Вечерний доступ
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Сауна
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                VIP раздевалки
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                Гостевой визит
+              </li>
+            </ul>
+            <div class="pricing-price-area">
+              <div class="pricing-price">3 900 ₽<span>/мес</span></div>
+              <div class="pricing-period">Полный самостоятельный доступ</div>
+            </div>
+            <a href="contacts.html" class="pricing-btn outline">Выбрать</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Additional Services -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header anim anim-up">
+        <div class="section-label">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          Дополнительно
+        </div>
+        <h2 class="section-title">Дополнительные услуги</h2>
+      </div>
+      <div class="facilities-grid" data-anim-children="up">
+
+        <!-- Сауна и SPA -->
+        <div class="facility-card anim anim-up">
+          <img src="images/sauna.jpg" alt="Сауна и SPA">
+          <div class="facility-card-overlay">
+            <div class="facility-card-title">Сауна и SPA</div>
+            <div class="facility-card-desc">Восстановление после тренировок</div>
+            <div class="facility-card-tag">от 800 ₽/сеанс</div>
+          </div>
+        </div>
+
+        <!-- VIP зал -->
+        <div class="facility-card anim anim-up">
+          <img src="images/vip.jpg" alt="VIP зал">
+          <div class="facility-card-overlay">
+            <div class="facility-card-title">VIP зал</div>
+            <div class="facility-card-desc">Приватная зона с премиум оборудованием</div>
+            <div class="facility-card-tag">от 1 500 ₽/час</div>
+          </div>
+        </div>
+
+        <!-- Персональный тренер (разово) -->
+        <div class="facility-card anim anim-up">
+          <img src="images/crossfit.jpg" alt="Персональный тренер">
+          <div class="facility-card-overlay">
+            <div class="facility-card-title">Персональный тренер</div>
+            <div class="facility-card-desc">Разовая индивидуальная тренировка</div>
+            <div class="facility-card-tag">от 1 200 ₽</div>
+          </div>
+        </div>
+
+        <!-- Нутрициолог -->
+        <div class="facility-card anim anim-up">
+          <img src="images/yoga.jpg" alt="Нутрициолог">
+          <div class="facility-card-overlay">
+            <div class="facility-card-title">Нутрициолог</div>
+            <div class="facility-card-desc">Составление плана питания</div>
+            <div class="facility-card-tag">от 2 000 ₽/консультация</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container" style="text-align:center; padding: 80px 24px;">
+      <h2 class="section-title anim anim-up" style="margin-bottom: 16px;">Первый визит — бесплатно!</h2>
+      <p class="section-subtitle anim anim-up">Попробуйте любую тренировку или посетите тренажёрный зал без оплаты. Запишитесь прямо сейчас.</p>
+      <div class="anim anim-up" style="margin-top: 32px;">
+        <a href="contacts.html" class="btn-primary">
+          Записаться бесплатно
+          <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+            </div>
+            ИМПУЛЬС
+          </a>
+          <p>Современный спортивный клуб для тех, кто стремится к результату. Тренируйтесь с профессионалами.</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Направления</div>
+          <a href="training.html">Тренировки</a>
+          <a href="schedule.html">Расписание</a>
+          <a href="facilities.html">Залы</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Клуб</div>
+          <a href="trainers.html">Тренеры</a>
+          <a href="pricing.html">Абонементы</a>
+          <a href="contacts.html">Контакты</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Контакты</div>
+          <a href="tel:88001234567">8 (800) 123-45-67</a>
+          <a href="mailto:info@impuls-sport.ru">info@impuls-sport.ru</a>
+          <a href="contacts.html">Москва, ул. Спортивная, 15</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 ИМПУЛЬС. Все права защищены.</span>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Telegram">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="VK">
+            <svg viewBox="0 0 24 24"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.587-1.496c.596-.19 1.362 1.259 2.174 1.814.614.42 1.08.328 1.08.328l2.172-.03s1.136-.07.598-.964c-.044-.073-.314-.662-1.618-1.872-1.366-1.268-1.183-1.062.462-3.255.999-1.334 1.399-2.148 1.274-2.496-.12-.332-.857-.244-.857-.244l-2.444.015s-.181-.025-.316.056c-.131.079-.216.263-.216.263s-.387 1.032-.903 1.91c-1.089 1.853-1.524 1.95-1.702 1.836-.414-.268-.311-1.074-.311-1.646 0-1.789.271-2.535-.528-2.729-.265-.064-.46-.107-1.139-.114-.87-.009-1.606.003-2.023.207-.277.136-.491.439-.361.456.161.021.525.098.718.36.25.339.24 1.1.24 1.1s.144 2.105-.334 2.366c-.328.179-.777-.186-1.74-1.854-.494-.854-.867-1.798-.867-1.798s-.072-.177-.2-.272c-.155-.115-.372-.151-.372-.151l-2.322.015s-.349.01-.477.161c-.114.135-.009.414-.009.414s1.817 4.252 3.876 6.396c1.887 1.965 4.032 1.836 4.032 1.836h.972z"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bottom Mobile Navigation -->
+  <nav class="bottom-nav">
+      <a href="index.html" class="bottom-nav-item" data-page="home">
+          <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span class="bottom-nav-label">Главная</span>
+      </a>
+      <a href="schedule.html" class="bottom-nav-item" data-page="schedule">
+          <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span class="bottom-nav-label">Расписание</span>
+      </a>
+      <a href="pricing.html" class="bottom-nav-item" data-page="pricing">
+          <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          <span class="bottom-nav-label">Цены</span>
+      </a>
+      <a href="trainers.html" class="bottom-nav-item" data-page="trainers">
+          <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <span class="bottom-nav-label">Тренеры</span>
+      </a>
+      <a href="contacts.html" class="bottom-nav-item" data-page="contacts">
+          <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span class="bottom-nav-label">Контакты</span>
+      </a>
+  </nav>
+
+  <script src="javascript/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Залы — ИМПУЛЬС</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="loading">
+
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-logo">ИМПУЛЬС</div>
+    <div class="preloader-spinner"></div>
+  </div>
+
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="container header-inner">
+<a href="index.html" class="logo">
+  <div class="logo-icon">
+    <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+  </div>
+  ИМПУЛЬС
+</a>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="training.html">Тренировки</a>
+        <a href="schedule.html">Расписание</a>
+        <a href="facilities.html">Залы</a>
+        <a href="trainers.html">Тренеры</a>
+        <a href="pricing.html">Абонементы</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <a href="contacts.html" class="header-cta">Записаться</a>
+    </div>
+  </header>
+
+  <!-- Facilities Hero -->
+  <section class="facilities-hero">
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="section-label anim anim-up">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Наши залы
+      </div>
+      <h1 class="section-title anim anim-up">Пространство для достижений</h1>
+      <p class="section-subtitle anim anim-up">Современное оборудование, продуманные зоны и атмосфера, которая мотивирует</p>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <div class="catalog-filters">
+    <div class="container" style="display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;">
+      <button class="filter-btn active" data-filter="all">Все</button>
+      <button class="filter-btn" data-filter="gym">Тренажёрный зал</button>
+      <button class="filter-btn" data-filter="boxing">Бокс</button>
+      <button class="filter-btn" data-filter="pool">Бассейн</button>
+      <button class="filter-btn" data-filter="yoga">Йога и пилатес</button>
+      <button class="filter-btn" data-filter="crossfit">Кроссфит</button>
+      <button class="filter-btn" data-filter="spa">Сауна и SPA</button>
+    </div>
+  </div>
+
+  <!-- Facilities Grid -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="catalog-grid" id="facilityGrid" data-anim-children="up">
+
+        <!-- a) Тренажёрный зал -->
+        <div class="facility-card facility-filter-card anim anim-up" data-category="gym">
+          <div class="facility-card-img">
+            <img src="images/hero.jpg" alt="Тренажёрный зал">
+          </div>
+          <div class="facility-card-overlay">
+            <h3 class="facility-card-title">Тренажёрный зал</h3>
+            <p class="facility-card-desc">Зона свободных весов, кардио-зона, силовые тренажёры. Более 50 единиц оборудования от ведущих производителей.</p>
+          </div>
+        </div>
+
+        <!-- b) Боксёрский ринг -->
+        <div class="facility-card facility-filter-card anim anim-up" data-category="boxing">
+          <div class="facility-card-img">
+            <img src="images/boxing.jpg" alt="Боксёрский ринг">
+          </div>
+          <div class="facility-card-overlay">
+            <h3 class="facility-card-title">Боксёрский ринг</h3>
+            <p class="facility-card-desc">Профессиональный ринг, груши, мешки и зона для работы с лапами. Идеально для бокса и единоборств.</p>
+          </div>
+        </div>
+
+        <!-- c) Бассейн -->
+        <div class="facility-card facility-filter-card anim anim-up" data-category="pool">
+          <div class="facility-card-img">
+            <img src="images/pool.jpg" alt="Бассейн">
+          </div>
+          <div class="facility-card-overlay">
+            <h3 class="facility-card-title">Бассейн</h3>
+            <p class="facility-card-desc">25-метровый бассейн с 4 дорожками. Чистая вода, комфортная температура и зона для отдыха.</p>
+          </div>
+        </div>
+
+        <!-- d) Зал йоги и пилатеса -->
+        <div class="facility-card facility-filter-card anim anim-up" data-category="yoga">
+          <div class="facility-card-img">
+            <img src="images/yoga.jpg" alt="Зал йоги и пилатеса">
+          </div>
+          <div class="facility-card-overlay">
+            <h3 class="facility-card-title">Зал йоги и пилатеса</h3>
+            <p class="facility-card-desc">Тихая и уютная студия с естественным светом. Профессиональные коврики и реформеры для пилатеса.</p>
+          </div>
+        </div>
+
+        <!-- e) Кроссфит арена -->
+        <div class="facility-card facility-filter-card anim anim-up" data-category="crossfit">
+          <div class="facility-card-img">
+            <img src="images/crossfit.jpg" alt="Кроссфит арена">
+          </div>
+          <div class="facility-card-overlay">
+            <h3 class="facility-card-title">Кроссфит арена</h3>
+            <p class="facility-card-desc">Просторная зона с бросковыми площадками, канатами, гирями и турниками. Для тех, кто любит интенсив.</p>
+          </div>
+        </div>
+
+        <!-- f) Сауна и SPA -->
+        <div class="facility-card facility-filter-card anim anim-up" data-category="spa">
+          <div class="facility-card-img">
+            <img src="images/sauna.jpg" alt="Сауна и SPA">
+          </div>
+          <div class="facility-card-overlay">
+            <h3 class="facility-card-title">Сауна и SPA</h3>
+            <p class="facility-card-desc">Финская сауна, хаммам и зона релаксации. Идеальное завершение тренировки.</p>
+          </div>
+        </div>
+
+        <!-- g) Зал пилатеса -->
+        <div class="facility-card facility-filter-card anim anim-up" data-category="yoga">
+          <div class="facility-card-img">
+            <img src="images/pilates.jpg" alt="Зал пилатеса">
+          </div>
+          <div class="facility-card-overlay">
+            <h3 class="facility-card-title">Зал пилатеса</h3>
+            <p class="facility-card-desc">Студия с профессиональными реформерами и малым оборудованием для пилатеса.</p>
+          </div>
+        </div>
+
+        <!-- h) VIP зал -->
+        <div class="facility-card facility-filter-card anim anim-up" data-category="gym">
+          <div class="facility-card-img">
+            <img src="images/vip.jpg" alt="VIP зал">
+          </div>
+          <div class="facility-card-overlay">
+            <h3 class="facility-card-title">VIP зал</h3>
+            <p class="facility-card-desc">Приватная зона с премиум оборудованием для индивидуальных тренировок. Максимальный комфорт и приватность.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Detail: Тренажёрный зал (normal) -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="facility-detail anim anim-up">
+        <div class="facility-detail-img">
+          <img src="images/hero.jpg" alt="Тренажёрный зал">
+        </div>
+        <div class="facility-detail-text">
+          <h2>Тренажёрный зал</h2>
+          <p>Наш тренажёрный зал — это пространство, где каждый найдёт всё необходимое для эффективной тренировки. Современное оборудование от ведущих мировых производителей, продуманная планировка и атмосфера, заряжающая на результат.</p>
+          <ul class="facility-detail-features">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+              Более 50 тренажёров
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+              Зона свободных весов
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+              Кардио-зона
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+              Профессиональное оборудование
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detail: Бассейн (reversed) -->
+  <section class="section">
+    <div class="container">
+      <div class="facility-detail anim anim-up" style="direction:rtl">
+        <div class="facility-detail-img" style="direction:ltr">
+          <img src="images/pool.jpg" alt="Бассейн">
+        </div>
+        <div class="facility-detail-text" style="direction:ltr">
+          <h2>Бассейн</h2>
+          <p>Наш 25-метровый бассейн — это идеальное место для плавания, аква-фитнеса и восстановления. Кристально чистая вода, комфортная температура и просторная зона отдыха создают условия для полноценных занятий.</p>
+          <ul class="facility-detail-features">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+              25 метров
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+              4 дорожки
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+              Температура 28°C
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+              Зона отдыха
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detail: Бокс (normal) -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="facility-detail anim anim-up">
+        <div class="facility-detail-img">
+          <img src="images/boxing.jpg" alt="Бокс">
+        </div>
+        <div class="facility-detail-text">
+          <h2>Бокс</h2>
+          <p>Профессиональная боксёрская зона с рингом, мешками и всем необходимым инвентарём. Идеальные условия для тренировок по боксу и единоборствам на любом уровне подготовки.</p>
+          <ul class="facility-detail-features">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+              Профессиональный ринг
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+              12 боксёрских мешков
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+              Зона работы с лапами
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+              Раздевалки
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section section">
+    <div class="container" style="text-align:center">
+      <div class="section-label anim anim-up">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Начните сегодня
+      </div>
+      <h2 class="section-title anim anim-up">Готовы начать тренировки?</h2>
+      <p class="section-subtitle anim anim-up">Запишитесь на бесплатное пробное занятие и познакомьтесь с нашими залами лично</p>
+      <div style="margin-top:32px" class="anim anim-up">
+        <a href="contacts.html" class="btn-primary">
+          Записаться на пробное занятие
+          <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+<div class="logo">
+  <div class="logo-icon">
+    <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+  </div>
+  ИМПУЛЬС
+</div>
+          <p>Спортивный клуб нового поколения. Пространство, где рождаются победы.</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Направления</div>
+          <a href="training.html">Тренировки</a>
+          <a href="schedule.html">Расписание</a>
+          <a href="facilities.html">Залы</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Клуб</div>
+          <a href="trainers.html">Тренеры</a>
+          <a href="pricing.html">Абонементы</a>
+          <a href="contacts.html">Контакты</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Контакты</div>
+          <a href="tel:+78001234567">8 (800) 123-45-67</a>
+          <a href="mailto:info@impuls-sport.ru">info@impuls-sport.ru</a>
+          <a href="#">Москва, ул. Спортивная, 15</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 ИМПУЛЬС. Все права защищены.</span>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Telegram">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="VK">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5.14 13.66h-1.66c-.63 0-.82-.5-1.95-1.64-1-.96-1.42-1.09-1.66-1.09-.34 0-.44.1-.44.56v1.5c0 .4-.13.64-1.18.64-1.74 0-3.67-1.05-5.03-3.01-2.04-2.87-2.6-5.02-2.6-5.46 0-.24.1-.46.56-.46h1.66c.42 0 .58.19.74.63.81 2.34 2.17 4.39 2.73 4.39.21 0 .31-.1.31-.63v-2.42c-.06-1.09-.64-1.18-.64-1.57 0-.19.16-.38.42-.38h2.61c.35 0 .48.19.48.61v3.28c0 .35.16.48.26.48.21 0 .38-.13.77-.52 1.19-1.33 2.04-3.39 2.04-3.39.11-.24.3-.46.72-.46h1.66c.5 0 .61.26.5.61-.21.97-2.25 3.86-2.25 3.86-.18.3-.25.43 0 .77.18.26.77.77 1.17 1.24.73.82 1.28 1.51 1.43 1.99.16.47-.08.72-.55.72z"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.46 14.14c-.38.3-3.14 1.48-4.58.14-1.44-1.34-3.08-3.32-2.7-4.16.38-.84 2.5-.98 3.64-1.08 1.14-.1 2.42.38 3.04.26.62-.12.92-.52.92-.52s.52.62.16 1.44c-.36.82-1.24 1.44-1.24 1.44s1.38-.04 2.26-.68c.88-.64.5-1.84.5-1.84s.52-.16 1.08.34c.56.5.02 2.52-1.08 3.66z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bottom Mobile Navigation -->
+  <nav class="bottom-nav">
+      <a href="index.html" class="bottom-nav-item" data-page="home">
+          <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span class="bottom-nav-label">Главная</span>
+      </a>
+      <a href="schedule.html" class="bottom-nav-item" data-page="schedule">
+          <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span class="bottom-nav-label">Расписание</span>
+      </a>
+      <a href="pricing.html" class="bottom-nav-item" data-page="pricing">
+          <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          <span class="bottom-nav-label">Цены</span>
+      </a>
+      <a href="trainers.html" class="bottom-nav-item" data-page="trainers">
+          <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <span class="bottom-nav-label">Тренеры</span>
+      </a>
+      <a href="contacts.html" class="bottom-nav-item" data-page="contacts">
+          <svg class="bottom-nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span class="bottom-nav-label">Контакты</span>
+      </a>
+  </nav>
+
+  <script src="javascript/main.js"></script>
+</body>
+</html>
