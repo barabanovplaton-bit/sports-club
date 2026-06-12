@@ -4,6 +4,7 @@
   // ===== PRELOADER =====
   const preloader = document.getElementById('preloader');
   document.body.classList.add('loading');
+  const savedScrollY = window.scrollY;
   function hidePreloader() {
     if (preloader) {
       preloader.classList.add('hide');
@@ -11,7 +12,7 @@
       document.body.style.position = '';
       document.body.style.width = '';
       document.body.style.height = '';
-      window.scrollTo(0, 0);
+      // Don't force scroll to top — restore previous position
       setTimeout(() => preloader.remove(), 400);
     }
   }
