@@ -408,7 +408,7 @@ input, textarea, select { font-family: inherit; }
 
 /* ===== TRAINERS ===== */
 .trainers-grid {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 24px;
 }
 .trainer-card {
   background: var(--bg-card); border: 1px solid var(--border);
@@ -1206,7 +1206,8 @@ body.loading { overflow: hidden !important; }
   .training-types-grid { grid-template-columns: 1fr; }
   .pricing-grid { grid-template-columns: 1fr; }
   .pricing-card.featured { transform: none; }
-  .trainers-grid { grid-template-columns: repeat(2, 1fr); }
+  .trainers-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .trainer-card-img { height: 220px; }
   .counters-grid { grid-template-columns: repeat(2, 1fr); }
   .facility-detail { grid-template-columns: 1fr; }
   .training-detail-section { grid-template-columns: 1fr; }
@@ -1222,8 +1223,8 @@ body.loading { overflow: hidden !important; }
   body { padding-bottom: 80px; }
   .footer { padding-bottom: 90px; }
   .hero-title { font-size: clamp(32px, 8vw, 56px); }
-  .trainers-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
-  .trainer-card-img { height: 200px; }
+  .trainers-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .trainer-card-img { height: 180px; }
   .trainer-card-body { padding: 14px 16px; }
   .trainer-card-name { font-size: 14px; }
   .trainer-card-role { font-size: 11px; }
@@ -1245,7 +1246,7 @@ body.loading { overflow: hidden !important; }
 }
 @media (max-width: 480px) {
   .trainers-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-  .trainer-card-img { height: 160px; }
+  .trainer-card-img { height: 150px; }
   .trainer-card-body { padding: 10px 12px; }
   .trainer-card-name { font-size: 13px; }
   .trainer-card-role { font-size: 10px; }
